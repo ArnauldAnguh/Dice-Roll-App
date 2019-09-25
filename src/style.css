@@ -1,0 +1,139 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+h1 {
+  width: 70%;
+  color: white;
+  background: rgb(190, 58, 58);
+  margin: 50px auto 0;
+  padding: 10px 20px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 8px #222;
+}
+
+.container {
+  width: 70%;
+  padding: 20px;
+  background: #efefef;
+  display: flex;
+  box-sizing: border-box;
+  margin: 0px auto;
+  box-shadow: 0px 2px 8px #222;
+}
+
+.container .inputs {
+  width: 40%;
+  margin: 10px;
+  background: #333;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.inputs input {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.inputs button {
+  margin: 10px 0px;
+  width: 100%;
+  height: 40px;
+  color: white;
+  font-size: 18px;
+
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  background: transparent;
+}
+
+.inputs button:hover,
+.inputs button:focus {
+  background: #666;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.display #output {
+  width: 90%;
+  height: 200px;
+  background: #222;
+  margin: 0px auto;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #222;
+  box-shadow: inset 0px 1px 2px #efefef;
+}
+
+.img {
+  width: 100%;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #222;
+  color: white;
+  margin: 0px auto;
+  background-image: url("b.png");
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img img {
+  animation: animate 1.5s ease-in-out forwards infinite;
+}
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.info {
+  display: block;
+  color: white;
+  margin: 5px auto;
+  text-align: center;
+  background: rgb(180, 47, 47);
+  padding: 2px 5px;
+}
+
+img {
+  margin: 0px;
+}
+
+.info1 {
+  display: block;
+  color: white;
+  margin: 5px auto;
+  text-align: center;
+  background: green;
+  padding: 5px;
+}
+
+#output {
+  overflow-x: hidden;
+}
+
+.container .display {
+  width: 60%;
+  background: lightgray;
+  box-sizing: border-box;
+  height: 300px;
+  padding: 5px 10px;
+}
+
+.display h3 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px 10px;
+  background: rgba(255, 0, 0, 0.555);
+  color: white;
+  text-align: center;
+}
